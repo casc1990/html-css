@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div +span及盒模型</title>
+    <style type="text/css">
+        div{
+            background-color: green;
+            color: #fff;
+        }
+        span{
+            background-color: green;
+            color: #fff;
+        }
+        body{
+            margin: 0px;
+            border: solid 0px;
+            padding: 0px;
+        }
+        /*  margin:模盒外边框； padding:模盒内边框；border:盒子边框宽度； width:盒子宽度；height:盒子高度  */
+        div{
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+            margin: 10px;
+            border: solid 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- DIV和span的区别在与，span是内联元素，div是块级元素   -->
+    <div>麦子学院div</div>
+    <span>麦子学院span</span>
+</body>
+</html>

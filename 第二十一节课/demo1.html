@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div +span及盒模型</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            border: solid 0px;
+            padding: 0px;
+        }
+        .div{
+            width: 600px;
+            height: 600px;
+            margin: 10px auto;
+            background-color: green;
+        }
+        .diva{
+            float: left;
+            width: 240px;
+            height: 240px;
+            background-color: red;
+        }
+        .divb {
+            float: left;
+            width: 240px;
+            height: 240px;
+            background-color: yellow;
+        }
+        .div div{
+            margin: 10px;
+            padding: 10px;
+            border: solid 10px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="diva">内模盒A</div>
+        <div class="divb">内模盒B</div>
+    </div>
+</body>
+</html>

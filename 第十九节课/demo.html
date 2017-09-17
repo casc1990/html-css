@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css常见属性--边框属性</title>
+    <style type="text/css">
+        /* border-width：指定边框宽度  */
+        /*  border-color:指定边框的颜色。给一个值的话，4条边框都使用同一种颜色；2个值表示上下和左右各一个颜色，3个值表示上，左右和下；4个值表示上、右、下、左  */
+        div{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-left: 10px;
+            background-color: #f60;
+            border-width: 10px;
+            /*  border-color: green; */
+            border-color: red gold blue green;
+        }
+        /*  border-style:整体定义边框样式  */
+        /*  border-left-style:定义某个方向边框样式。border-left-style：左边边框样式  */
+        /*  border-right-width:指定某个方向的边框厚度。border-right-width：右边边框的厚度  */
+        /*  border-right-color: 指定某个方向的边框颜色。border-right-color：右边边框的颜色   */
+        .div1{ border-style: solid; }
+        .div2{ border-left-style: dashed; }
+        .div3{ border-style: dotted; }
+        .div4{ border-style: double; }
+        .div5,.div6,.div7,.div8,.div9{
+            background: none;
+            border-width: 20px;
+            width: 80px;
+            height: 80px;
+            border-color: #aaa #bbb #ccc #ddd
+        }
+        .div5{
+            border-style: groove;
+            border-right-width: 35px;
+            border-right-color: #447e9b;
+        }
+        .div6{  border-style: ridge; }
+        .div7{  border-style: inset; }
+        .div8{  border-style: outset; }
+        .div9{  border-style: inherit; }
+    </style>
+</head>
+<body>
+    <div class="div1">直线边框</div>
+    <div class="div2">虚线边框</div>
+    <div class="div3">点状边框</div>
+    <div class="div4">双线边框</div>
+    <div class="div5">凸槽边框</div>
+    <div class="div6">垄状边框</div>
+    <div class="div7">inset边框</div>
+    <div class="div8">outset边框</div>
+    <div class="div9">inherit继承</div>
+</body>
+</html>

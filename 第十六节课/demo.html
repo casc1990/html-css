@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css常见属性--字体大小</title>
+    <style type="text/css">
+        /*  font-size: 40px:设置固定的字体大小值；font-size: 40%：相对于父元素的百分比； */
+        /*  inherit:继承父元素的大小； smaller：比父元素更小；larger：比父元素更大 */
+        body{
+            font-size: 40px;
+        }
+         h1{ font-size: 100%; }
+        .hc{ font-size: inherit }
+        .ha{ font-size: smaller; }
+        .hb{ font-size: larger;}
+    </style>
+</head>
+<body>
+    <p>麦子学院</p>
+    <h1 class="ha">麦子学院</h1>
+    <h1>麦子学院</h1>
+    <h1 class="hc">麦子学院</h1>
+    <h1 class="hb">麦子学院</h1>
+</body>
+</html>

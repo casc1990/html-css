@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css常见属性--颜色</title>
+    <style type="text/css">
+        /*  定义color属性，可以写颜色的名称，也可以写颜色的表达式，还可以简写 */
+        /* #ff(红)66(绿)00(黄)  #ff6600简写#f60 */
+        /* color：rgb（红,绿,蓝）这种也可以表示颜色，每组的取值范围0-255，例如：rgb(255,0,0)表示红色  */
+        /* color：rgba（红,绿,蓝,字体亮度）  亮度的取值范围0-1之前，默认为1,设置为0就会看不到了*/
+        p{ color: gold; }
+        h1{ color: #ff6600; }
+        h2{ color: #f60; }
+        h3{ color: rgb(182,22,206) }
+        h4{ color: rgba(182,22,206,0.8) }
+        .ha{ color: rgba(182,22,206,0.2) }
+    </style>
+</head>
+<body>
+    <h1>麦子学院</h1>
+    <h2>麦子学院</h2>
+    <h3>麦子学院</h3>
+    <h4>麦子学院</h4>
+    <h4 class="ha">麦子学院</h4>
+    <p>麦子学院</p>
+</body>
+</html>

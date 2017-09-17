@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器--id</title>
+    <style type="text/css">
+        /* p{ color: red; font-size: 18px; } */
+        /* id定义了样式的名字，使用#id_name选择对应的名字设置样式 */
+        /* .p{ color: green; font-size: 28px; } */
+        /* .pp{ color: red; } */
+        #ppp { color:blue; font-size: 28px; }
+        /* 设置div标记下的p标签的样式 */
+        #ppp p{ color: red; }
+        /* 选择器优先级：id选择器>class 选择器>html选择器  */
+    </style>
+</head>
+<body>
+    <div id="ppp">
+     <p class="pp">麦子学院</p>
+     麦子学院 麦子学院
+    </div>
+</body>
+</html>
