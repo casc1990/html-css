@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div+css布局属性</title>
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .div{
+            /*  position:relative（正常定位）；absolute:(根据父元素进行定位); fixed(根据浏览器窗口进行定位)  */
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            left: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        span{
+            /* display:层级的显示方式。none：不显示(隐藏)；block:转换成块级元素；inline:转换成内敛元素 */
+            position: absolute;
+            background-color: #f60;
+            color: #fff;
+            left: 10px;
+            top: 10px;
+            display: block;
+            width: 180px;
+            height: 50px;
+        }
+        .fixed{
+            /* z-index:层级的显示优先级，数字越大，越优先显示  */
+            position: fixed;
+            background-color: aqua;
+            color: coral;
+            top: 150px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <p>联系电话：111111</p>
+        <p>联系QQ：456@qq.com</p>
+        <p>联系地址：四川省成都市</p>
+    </div>
+    <div class="div">
+        <span>点击人数：222</span>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</body>
+</html>

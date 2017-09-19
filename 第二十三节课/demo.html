@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css浮动及溢出处理</title>
+    <style type="text/css">
+        .div{
+            width: 960px;
+            height: 600px;
+            background-color: #f1f1f1;
+            margin: 0 auto;
+        }
+        .left{
+            /* float:浮动方向。 left：左浮动；right：右浮动  */
+            float: left;
+            width: 260px;
+            height: 460px;
+            background-color: #ccc;
+        }
+        .right{
+            float: right;
+            width: 700px;
+            height: 460px;
+            background-color: #ddd;
+        }
+        /* clear:清除浮动；有浮动和未设置浮动的地方最好嵌入一个div,对div做清除浮动   */
+        .clear{ clear: both; }
+        .bottom{
+            margin-top: 10px;
+            width: 960px;
+            height: 140px;
+            background-color: red;
+        }
+        .jianjie{
+            /*  overflow:溢出处理（文字超出层级） auto：自动添加滚动条   */
+            width: 260px;
+            height: 120px;
+            background-color: blue;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="left">
+            <div class="jianjie">
+                在此次签订的130架订单中，有70架为确认订单，另60架为意向订单。四家签约用户中，中核租赁，华宝租赁和航空工业租赁都是新用户，这让C919的签约用户数增加到了27家。在2012年与中国商飞签署45架C919大型客机订购协议的农银金融租赁有限公司，此次再次签订30架订单，也成为C919成功首飞后首家增加飞机订单的客户。
+农银金融租赁有限公司总裁 王以刚：
+这次续签订单，是表明我们支持民族工业的决心，也表明我们对大飞机充分的信心。进一步支持我们大飞机走向全球。
+国产C919大型客机，可载客168人，最大航程可达5500公里。今年的5月5日，C919首架机完成首飞。在不断收获订单的同时，为C919打开国际市场的努力也在同步进行中。
+中国商飞公司市场营销部部长 党铁红：
+目前C919客机也向欧洲YASA（欧洲航空局）提出了TC（型号合格证）的申请，（型号合格证）对未来开拓海外市场，特别是欧美市场是一个重要的先决条件。随着研制工作不断取得成果，我们也会全力开拓国内市场，稳健地开拓海外市场。
+目前，完成首飞的C919首架机，即将开始为取得中国民航局颁发的适航证展开试飞工作。第二架C919飞机的总装工作也将在今年内完成。
+            </div>
+        </div>
+        <div class="right"></div>
+        <div class="clear"></div>
+        <div class="bottom"></div>
+
+    </div>
+</body>
+</html>
